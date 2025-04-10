@@ -23,14 +23,15 @@ body{
 }
 /*Globales*/
 .contenedor {
-    max-width: 120rem;
-    width: 90%;
+
+    width: 100%;
     margin: 0 auto;
 }
 a {
     text-decoration: none;
 }
 h1, h2, h3, h4 {
+    color: var(--negro);
     font-family: var(--fuente);
     line-height: 1.2;
 }
@@ -46,8 +47,14 @@ h3 {
 h4 {
     font-size: 2.8rem;
 }
+p {
+    font-family: var(--fuente);
+    font-size: 1.8rem;
+    line-height: 1.5;
+    color: var(--negro);
+}
 img {
-    max-width: 100%;
+    width: 100%;
 }
 
 /*Utilidades*/
@@ -57,20 +64,34 @@ img {
 .no-padding {
     padding: 0;
 }
-.centrar-texta {
+.centrar-texto {
     text-align: center;
 }
 
 /*header*/
 .header {
-    background-image: url(/img/hermoso-sorprendente-paisaje-campo-flores-cosmos-puesta-sol_1484-2511.avif);
+    background-image: url(/Solemne1/img/HD-wallpaper-poppy-flowers-field-flowers-field-nature.jpg);
     height: 60rem;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
 }
-.navegacion {
-
+.logo__nombre {
+    color: var(--negro);
+}
+.barra {
+    background-color: var(--cardo);
+    display: block;
+    text-align: center;
+}
+@media (min-width:768px) {
+    .barra {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 2rem;
+        height: 110px;
+    }
 }
 @media (min-width: 768px) {
     .navegacion {
@@ -82,5 +103,85 @@ img {
     display: block;
     text-align: center;
     font-size: 1.8rem;
-    color: var;
+    color: var(--azul);
+    gap: 2rem;
+}
+
+/*Main*/
+.main {
+    background-color: var(--cardo);
+}
+
+/*Grid*/
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap:2rem;
+}
+
+/*Servicio*/
+.servicio {
+    background-color: var(--rosa-algo);
+    padding: 1rem;
+    border-radius: 1.2rem;
+}
+.servicio__imagen {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 1.2rem;
+}
+.servicio__nombre {
+    font-family: var(--fuente);
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    line-height: 1.2;
+}
+.servicio__informacion {
+    font-family: var(--fuente);
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    line-height: 1.2;
+}
+.footer {
+    background-color: var(--cardo);
+}
+
+/*nosotros*/
+.nosotros{
+    background-color: var(--cardo);
+}
+@media (min-width: 768px) {
+    .nosotros {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 2rem;
+        margin-bottom: 2rem;
+    }
+}
+.titulo_nosotros {
+    text-align: center;
+}
+
+/*Boton*/
+.boton {
+    background-color: var(--azul);
+    display: block;
+    font-family: var(--fuente);
+    color: var(--blanco);
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+}
+.boton:hover {
+    cursor: pointer;
+}
+span {
+    font-weight: 700;
 }
