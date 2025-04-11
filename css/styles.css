@@ -70,7 +70,7 @@ img {
 
 /*header*/
 .header {
-    background-image: url(/Solemne1/img/HD-wallpaper-poppy-flowers-field-flowers-field-nature.jpg);
+    background-image: url(/img/HD-wallpaper-poppy-flowers-field-flowers-field-nature.jpg);
     height: 60rem;
     background-size: cover;
     background-repeat: no-repeat;
@@ -178,10 +178,30 @@ img {
     padding-right: 3rem;
     font-size: 1.8rem;
     text-transform: uppercase;
+    width: 150px;
+    height: 80px;
 }
 .boton:hover {
     cursor: pointer;
 }
 span {
     font-weight: 700;
+}
+
+/*Formulario*/
+.formulario {
+    display: flex;
+    flex-direction: column;
+}
+.formulario__boton {
+    align-items: center;
+}
+
+/*caja*/
+.caja {
+    width: 300px;
+    padding: 10px;
+    font-size: 1.5rem;
+    border: 2px solid #ccc;
+    border-radius: 8px;
 }
